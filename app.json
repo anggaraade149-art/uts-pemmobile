@@ -2,6 +2,7 @@
   "expo": {
     "name": "mobileprojectapp",
     "slug": "mobileprojectapp",
+    "scheme": "mobileprojectapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -17,8 +18,15 @@
         "monochromeImage": "./assets/android-icon-monochrome.png"
       }
     },
+    "experiments": {
+      "typedRoutes": true
+    },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store"
+    ]
   }
 }
